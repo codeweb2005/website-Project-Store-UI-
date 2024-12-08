@@ -1,0 +1,42 @@
+        h1 {
+            text-align: center;
+            
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+      button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #f2f2f2;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        thead{
+            text-align: center;
+        }
+
+       .main {
+           font-family: "Dancing Script", cursive;
+          }
+.userList button{
+    margin-top: 30px;
+}
+

@@ -1,0 +1,145 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  width: 100vw;  
+}
+
+h1 {
+  font-size: 5vw; 
+}
+  
+  /* Styling cho sidebar */
+  .sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(40, 38, 38);
+    padding-top: 20px;
+
+    
+  }
+  
+  /* Styling cho các link trong sidebar */
+  .sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    background-color: #575757;
+  }
+  
+  /* Styling cho nội dung chính khi có sidebar */
+  .main-content {
+
+    padding: 20px;
+  }
+  
+#homepage,#product,#ordermanagement,#statistical,#usermanagement{
+  background-color:#575757 ;
+}
+
+.sidebar img{
+  border-radius: 50%;
+  width: 50%;
+  background-color: #888888;
+  margin-left:10px;
+}
+.avatar{
+  color: white;
+  justify-content: center;
+  font-size: 10px;
+  margin-left: 50px;
+}
+#admin-name {
+    margin-left: 30px;
+}
+#email-admin{
+  margin-left: 10px;
+}
+.sales-week{
+  padding: 10px;
+  width:250px;
+
+  display: block;
+  box-shadow: 1px 1px 1px 1px rgb(139, 138, 138);
+}
+.sales{
+  display: flex;
+    gap: 10px;
+}
+
+/*----------------------- table -----------*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px;
+  box-shadow: 1px 1px 1px 1px rgb(139, 138, 138);
+  background-color: white;
+ 
+}
+
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color:#f2f2f2;
+}
+
+
+.progress-container {
+    text-align: center;
+    font-size: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(139, 138, 138);
+    height: 200px;
+    width: 150px;
+    padding: auto;
+    background-color: white;
+}
+
+.title {
+    
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+#tabledashboard{
+  bottom: 10px;
+  position: absolute;
+  height: 300px; 
+  width: 1240px;
+  font-size: 20px; 
+}
+button {
+  padding: 10px 20px;
+  background-color: lightskyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+#toggleButton{
+  background-color: white;
+  color: black;
+  position: absolute;
+  top:0px;
+  right:0px;
+ border:1px solid black ;
+}

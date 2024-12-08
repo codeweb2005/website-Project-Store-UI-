@@ -1,0 +1,90 @@
+
+@media (max-width: 320px) {
+    /* Điều chỉnh kích thước chữ và cách sắp xếp trên màn hình nhỏ */
+    .main-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .main-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+    table, th, td {
+        font-size: 10px;
+     
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .filter-section label, .filter-section input, .filter-section select, .filter-section button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .filter-section {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/* Điều chỉnh cho màn hình nhỏ hơn 320px */
+@media (max-width: 320px) {
+    .main {
+        padding: 10px; /* Giảm padding để phần tử nhỏ lại */
+        font-size: 14px; /* Điều chỉnh kích thước font cho màn hình nhỏ */
+    }
+
+    h1, h2 {
+        font-size: 16px; /* Giảm kích thước font của tiêu đề */
+    }
+
+    .form-group {
+        margin-bottom: 8px; /* Giảm khoảng cách giữa các trường nhập liệu */
+    }
+
+    table {
+        font-size: 10px; /* Giảm kích thước font của bảng */
+        width: 100%; /* Đảm bảo bảng không bị tràn */
+        border-collapse: collapse; /* Làm cho các đường biên của bảng không bị gãy */
+    }
+
+    table th, table td {
+        padding: 6px; /* Giảm padding trong các ô bảng */
+        text-align: left; /* Căn trái nội dung trong các ô */
+    }
+
+    /* Điều chỉnh chiều rộng của các cột trong bảng */
+    table th:nth-child(1), table td:nth-child(1) {
+        width: 15%; /* Giảm chiều rộng của cột hình ảnh */
+    }
+
+    table th:nth-child(2), table td:nth-child(2) {
+        width: 30%; /* Giảm chiều rộng của cột tên sản phẩm */
+    }
+
+    table th:nth-child(3), table td:nth-child(3) {
+        width: 20%; /* Giảm chiều rộng của cột giá sản phẩm */
+    }
+
+    table th:nth-child(4), table td:nth-child(4) {
+        width: 15%; /* Giảm chiều rộng của cột số lượng */
+    }
+
+    table th:nth-child(5), table td:nth-child(5) {
+        width: 20%; /* Giảm chiều rộng của cột kiểu dáng */
+    }
+
+    table th:nth-child(6), table td:nth-child(6),
+    table th:nth-child(7), table td:nth-child(7) {
+        width: 10%; /* Giảm chiều rộng của các cột chỉnh sửa và xóa */
+    }
+}

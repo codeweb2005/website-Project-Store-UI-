@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Login</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: auto;        
+        }
+        .container {
+            background-color: rgba(255, 255, 255);
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            padding: 32px;
+            max-width: 400px;
+            width: 100%;
+            z-index: 1;
+            align-items: center;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 24px;
+            text-align: center;
+            color: #1f2937;
+        }
+        .form-group {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #000000;
+        }
+        input[type="email"],
+        input[type="password"] {
+            margin-top: 4px;
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            transition: border-color 0.15s ease-in-out;
+        }
+        input:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+        .submit-btn {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            margin-top: 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .submit-btn:hover {
+            background-color: #808080;
+        }
+        .spinner {
+            margin-left: 8px;
+            width: 20px;
+            height: 20px;
+            border: 2px solid white;
+            border-top: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            display: none;
+        }
+        .signup {
+            margin-top: 24px;
+            text-align: center;
+            font-size: 14px;
+            color: #6b7280;
+        }
+        .signup a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.15s ease-in-out;
+        }
+        .signup a:hover {
+            color: #2563eb;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="margin: auto;">
+        <h1 class="title">Login</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required />
+            </div>
+            <button type="submit" class="submit-btn" onclick="showSpinner()">
+                <span id="submitText">Login</span>
+                <div id="submitSpinner" class="spinner"></div>
+            </button>
+        </form>
+        <div class="signup">
+            <p>Don't have an account? <a href="Signup.html">Sign up</a></p>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <script>
+        function showSpinner() {
+            const submitText = document.getElementById('submitText');
+            const submitSpinner = document.getElementById('submitSpinner');
+            submitText.style.display = 'none';
+            submitSpinner.style.display = 'block';
+            setTimeout(() => {
+                window.location.href = '/CONTENT/HOME/home.html';
+            }, 2000);
+        }
+
+        // Sticky Header
+        window.onscroll = function () { stickyHeader(); };
+        var header = document.querySelector(".sticky-header");
+        var sticky = header.offsetTop;
+
+        function stickyHeader() {
+            if (window.scrollY > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+        <script src="/CONTENT/history/his.js"></script>
+
+</body>
+</html>

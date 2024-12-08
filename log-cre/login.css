@@ -1,0 +1,405 @@
+/* Footer Group */
+.footer-group {
+    padding: 32px 0;
+    border: 1px solid #000000;
+    border-left: none;
+    border-right: none;
+}
+
+.top-bar ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    padding: 0 250px;
+    list-style: none;
+    justify-items: center;
+    margin: 0;
+}
+
+.top-bar li {
+    align-items: center;
+    display: flex;
+    text-align: left;
+}
+
+.top-bar-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-bar i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.top-bar p {
+    font-size: 16px;
+    color: black;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    padding: 36px 0;
+}
+
+.footer-section {
+    width: 50%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 250px;
+    padding: 0 20px;
+}
+
+.footer-section .footer-heading a {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-news {
+    margin-top: 35px;
+}
+
+.footer-news h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 1.25;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+    text-align: start;
+}
+
+.footer-news p {
+    line-height: 1.25;
+    color: #bebebe;
+    font-size: 16px;
+    text-transform: none;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: start;
+}
+
+.footer-news .sign-up-field .filed-input {
+    margin: 0;
+    background: 0 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #707070;
+    height: 42px;
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-news .actions {
+    margin-top: 35px;
+}
+
+.footer-news .actions .btn-subscribe {
+    font-size: 12px;
+    padding: 0 36px;
+    height: 42px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 0;
+    font-weight: 400;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    width: auto;
+    font-family: inherit;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.footer-news .actions .btn-subscribe:hover {
+    background-color: #000000;
+    color: #cfcfcf;
+    border-color: #cfcfcf;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    width: 50%;
+    padding-top: 95px;
+}
+
+.footer-column {
+    margin: 0 40px;
+    text-align: left;
+}
+
+.footer-column h3 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.social-icons a {
+    align-items: center;
+    text-align: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background-color: #777;
+    color: white;
+    font-size: 32px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #444;
+    color: #bbb;
+}
+
+.footer-bottom {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 24px;
+}
+
+.footer-bottom p {
+    margin-top: 15px;
+}
+/* Header Section */
+.header-group {
+    width: 100%;
+    height: 35vh;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+.heading-logo a {
+    font-size: 65px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.announcement {
+    color: #eee;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.section-header {
+    padding: 0 24px;
+}
+
+/* Sticky Header */
+.sticky-header {
+    position: fixed;
+    background-color: transparent;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.sticky-header:hover {
+    background-color: rgba(44, 44, 44, 0.918);
+}
+
+.sticky {
+    background-color: rgba(44, 44, 44, 0.918);
+}
+
+.sticky .announcement {
+    display: none;
+}
+
+/* Header Icons */
+.header-icons {
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-top: -58px;
+    position: relative;
+}
+
+.icon {
+    text-align: center;
+    font-size: 14px;
+    padding-right: 20px;
+    color: white;
+    transition: font-size 0.3s ease;
+    display: inline-block;
+}
+
+.icon i:hover {
+    font-size: 16px;
+}
+
+/* Navigation */
+.header-navbar {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.header-navbar a {
+    text-decoration: none;
+    color: #eee;
+    transition: color 0.3s ease;
+    border-bottom: 5px solid transparent;
+}
+
+nav a:hover {
+    color: lightsalmon;
+}
+
+/* Hero Section */
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 83vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero_content {
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    margin-left: 162px;
+    max-width: 800px;
+    height: 350px;
+    text-shadow: 0 3px 6px #000;
+}
+
+.hero_content h1 {
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 1.3;
+    letter-spacing: 0.3vw;
+}
+
+.hero_content p {
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+/* Discover Button */
+.btn-discover {
+    display: inline-block;
+    padding: 10px 62px;
+    border: 3px solid white;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    backdrop-filter: blur(18px);
+}
+
+.btn-discover:hover {
+    background-color: rgba(26, 26, 26, 0.96);
+}
+
+/* Sale Menu (Nếu có) */
+.sale-menu {
+    display: none;
+    position: absolute;
+    top: 95%; /* Xuất hiện ngay bên dưới thanh navbar */
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    justify-content: start;
+}
+
+.sale-menu div {
+    flex: 1;
+    text-align: left;
+}
+
+.sale-menu h3 {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.sale-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+.sale-menu li {
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+    font-weight: normal; 
+}
+
+.header-navbar .sale-link:hover + .sale-menu,
+.sale-menu:hover {
+    display: flex;
+}
+
+/* Các đường phân cách nếu cần */
+.line {
+    border: none;
+    border-top: 1px solid rgb(0, 0, 0);
+    width: 20vh;
+    margin: 10px 0;
+}
